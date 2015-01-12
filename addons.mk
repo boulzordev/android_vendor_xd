@@ -46,3 +46,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Hosts
 PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/etc/hosts:system/etc/hosts
+
+# Fix for Verizon data problems
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.get_imsi_from_sim=true
