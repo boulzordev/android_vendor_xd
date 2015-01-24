@@ -6,7 +6,7 @@ PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.supersu.version=2.44
+  ro.supersu.version=2.45
 endif
 
 # Chromium Prebuilt
@@ -23,9 +23,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.delta.version=$(CM_VERSION) \
     ro.build.selinux=0
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0
+
 # My Product Copies 
 PRODUCT_COPY_FILES += \
-    vendor/xd/prebuilt/common/bin/mpdecision:system/bin/mpdecision \
     vendor/xd/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
     vendor/xd/prebuilt/common/etc/init.d/96setenforce:system/etc/init.d/96setenforce
 
@@ -46,7 +48,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Hosts
 PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/etc/hosts:system/etc/hosts
-
-# Fix for Verizon data problems
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.get_imsi_from_sim=true
