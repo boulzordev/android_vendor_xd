@@ -48,3 +48,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Hosts
 PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/etc/hosts:system/etc/hosts
+
+#Screen recorder package and lib
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
+
+# Build Updater
+PRODUCT_PACKAGES += \
+    DeviceControl
