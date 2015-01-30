@@ -45,15 +45,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     lpa.use-stagefright=false \
     tunnel.decode=false
 
-#Hosts
+# Hosts
 PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/etc/hosts:system/etc/hosts
 
-#Screen recorder package and lib
+# Screen recorder package and lib
 PRODUCT_PACKAGES += \
     ScreenRecorder \
     libscreenrecorder
 
-# Build Updater
+# Performance
 PRODUCT_PACKAGES += \
-    DeviceControl
+    DeviceControl 
+
+# Installer
+PRODUCT_COPY_FILES += \
+    vendor/xd/prebuilt/common/addon.d/95-backup.sh:system/addon.d/99-backup.sh \
+    vendor/xd/prebuilt/common/etc/backup.conf:system/etc/backup.conf
