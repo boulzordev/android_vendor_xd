@@ -4,9 +4,6 @@ else
 PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/xd/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.supersu.version=2.45
 endif
 
 # Chromium Prebuilt
@@ -24,7 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=0
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.adb.secure=0
+     ro.adb.secure=0
 
 # My Product Copies 
 PRODUCT_COPY_FILES += \
@@ -38,12 +35,6 @@ PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf \
     vendor/xd/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     vendor/xd/prebuilt/common/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    lpa.decode=false \
-    lpa.releaselock=false \
-    lpa.use-stagefright=false \
-    tunnel.decode=false
 
 # Hosts
 PRODUCT_COPY_FILES += \
@@ -60,5 +51,12 @@ PRODUCT_PACKAGES += \
 
 # Installer
 PRODUCT_COPY_FILES += \
-    vendor/xd/prebuilt/common/addon.d/95-backup.sh:system/addon.d/99-backup.sh \
+    vendor/xd/prebuilt/common/addon.d/95-backup.sh:system/addon.d/95-backup.sh \
     vendor/xd/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+
+# APN's
+PRODUCT_COPY_FILES += \
+    vendor/xd/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
+    vendor/xd/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
+
+include vendor/xd/config/sm.mk
