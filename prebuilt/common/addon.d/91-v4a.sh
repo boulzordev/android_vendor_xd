@@ -11,6 +11,7 @@ list_files() {
 cat <<EOF
 lib/soundfx/libv4a_fx_ics.so
 etc/audio_effects.conf
+etc/audio_policy.conf
 vendor/etc/audio_effects.conf
 EOF
 }

@@ -30,11 +30,21 @@ PRODUCT_COPY_FILES += \
 
 #Viper4Android
 PRODUCT_COPY_FILES += \
-    vendor/xd/prebuilt/common/priv-app/V4A/V4A.apk:system/priv-app/V4A/V4A.apk \
+    vendor/xd/prebuilt/common/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh \
+    vendor/xd/prebuilt/common/priv-app/ViPER4Android_FX_A4.x/ViPER4Android_FX_A4.x.apk:system/priv-app/ViPER4Android_FX_A4/ViPER4Android_FX_A4.x.apk \
+    vendor/xd/prebuilt/common/priv-app/ViPER4Android_FX_A4.x/lib/arm/libV4AJniUtils.so:system/priv-app/ViPER4Android_FX_A4/lib/arm/libV4AJniUtils.so \
     vendor/xd/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
+    vendor/xd/prebuilt/common/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfxlibaudiopreprocessing.so \
+    vendor/xd/prebuilt/common/lib/soundfx/libbundlewrapper.so:system/lib/soundfx/libbundlewrapper.so \
+    vendor/xd/prebuilt/common/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
+    vendor/xd/prebuilt/common/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
+    vendor/xd/prebuilt/common/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so \
+    vendor/xd/prebuilt/common/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
+    vendor/xd/prebuilt/common/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
+    vendor/xd/prebuilt/common/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
     vendor/xd/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf \
-    vendor/xd/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    vendor/xd/prebuilt/common/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh
+    vendor/xd/prebuilt/common/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    vendor/xd/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf 
 
 # Hosts
 PRODUCT_COPY_FILES += \
