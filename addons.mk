@@ -46,9 +46,12 @@ PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/etc/audio_policy.conf:system/etc/audio_policy.conf \
     vendor/xd/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf 
 
-# Hosts
+# Okay Google
 PRODUCT_COPY_FILES += \
-    vendor/xd/prebuilt/common/etc/hosts:system/etc/hosts
+    vendor/xd/prebuilt/common/etc/permissions/com.motorola.triggerenroll.xml:system/etc/permissions.com.motorola.triggerenroll.xml \
+    vendor/xd/prebuilt/common/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so \
+    vendor/xd/prebuilt/common/priv-app/TriggerEnroll/TriggerEnroll.apk:system/priv-app/TriggerEnroll/TriggerEnroll.apk \
+    vendor/xd/prebuilt/common/priv-app/TriggerTrainingService/TriggerTrainingService.apk:system/priv-app/TriggerTrainingService/TriggerTrainingService.apk 
 
 # Screen recorder package and lib
 PRODUCT_PACKAGES += \
