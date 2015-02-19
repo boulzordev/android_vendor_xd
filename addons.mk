@@ -82,4 +82,8 @@ PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/priv-app/LMT/LMT.apk:system/priv-app/LMT/LMT.apk \
     vendor/xd/prebuilt/common/priv-app/LMT/lib/arm/libTouchServiceNative.so:system/priv-app/LMT/lib/arm/libTouchServiceNative.so
 
+# OmniSwitch
+PRODUCT_PACKAGES += \
+    OmniSwitch
+
 include vendor/xd/config/sm.mk
