@@ -58,9 +58,9 @@ PRODUCT_PACKAGES += \
     ScreenRecorder \
     libscreenrecorder
 
-# Performance
+# PerformanceControl
 PRODUCT_PACKAGES += \
-    DeviceControl 
+    PerformanceControl
 
 # Installer
 PRODUCT_COPY_FILES += \
@@ -71,5 +71,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/xd/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
+
+# AdBlocker Files
+PRODUCT_COPY_FILES += \
+    vendor/xd/prebuilt/common/etc/hosts.alt:system/etc/hosts.alt \
+    vendor/xd/prebuilt/common/etc/hosts.og:system/etc/hosts.og
 
 include vendor/xd/config/sm.mk
