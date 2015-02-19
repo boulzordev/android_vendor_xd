@@ -77,4 +77,9 @@ PRODUCT_COPY_FILES += \
     vendor/xd/prebuilt/common/etc/hosts.alt:system/etc/hosts.alt \
     vendor/xd/prebuilt/common/etc/hosts.og:system/etc/hosts.og
 
+# LMT (PIE)
+PRODUCT_COPY_FILES += \
+    vendor/xd/prebuilt/common/priv-app/LMT/LMT.apk:system/priv-app/LMT/LMT.apk \
+    vendor/xd/prebuilt/common/priv-app/LMT/lib/arm/libTouchServiceNative.so:system/priv-app/LMT/lib/arm/libTouchServiceNative.so
+
 include vendor/xd/config/sm.mk
